@@ -67,6 +67,10 @@ Starting to implement other objects persistence. Starting with "Platform".
 
 Starting to use GitHub. It is about time for me to learn about branches and pull requests. It is way more easier than I thought.
 
+### 2018/05/31
+
+Starting a new branch for implementing platform persistence.
+
 Some ToDos:
 - [x] delete expired tokens automaticaly
 - [ ] explain better the token strategy inside the README file

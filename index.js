@@ -34,7 +34,7 @@ fs.readdir('./data/token',function(err,files) {
                     if(tokenData.expires < Date.now()) {
                         _data.delete('./token/',file.slice(0,-5),function(err) {
                             if(err) {
-                                console.log('could not delete token ' + err);
+                                console.log('could not delete old token ' + err);
                             }
                         });
                     } else {

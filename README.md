@@ -1,8 +1,10 @@
 ---
-Second App
-NodeJS Master Class
+Second App NodeJS Master Class
 ---
+
+
 # Second App
+
 **NodeJS MasterClass**
 
 **Thiago Bignotto - May, 2018**
