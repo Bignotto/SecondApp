@@ -21,6 +21,33 @@ var _route = require('./lib/routes');
 var _handler = require('./lib/handlers');
 var _helpers = require('./lib/helpers');
 
+
+/*
+Clean up function.
+Delete all expired tokens on startup!
+*/
+fs.readdir('./data/token',function(err,files) {
+    if(!err && files) {
+        files.forEach(function(file) {
+            _data.read('./token/',file.slice(0,-5),function(err,tokenData) {
+                if(!err) { 
+                    if(tokenData.expires < Date.now()) {
+                        _data.delete('./token/',file.slice(0,-5),function(err) {
+                            if(err) {
+                                console.log('could not delete token ' + err);
+                            }
+                        });
+                    } else {
+                        console.log('token still valid: ' + tokenData.id);
+                    }
+                } else {
+                    console.log('could not delete token ' + err);
+                }
+            });
+        })//files.forEach
+    }
+});//fs.readdir
+
 //log the configuration
 console.log(JSON.stringify(_config));
 

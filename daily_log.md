@@ -61,7 +61,12 @@ Finished refactoring the User.GET method to verify if the user has a valid token
 >
 > Goal Achieved! 22:30
 
-Starting to implement other 
+Refactored the Token.DELETE function to delete the user token when deleting a user. The token wont be useful anymore.
+
+Starting to implement other objects persistence. Starting with "Platform".
+
+Starting to use GitHub. It is about time for me to learn about branches and pull requests. It is way more easier than I thought.
 
 Some ToDos:
+- [x] delete expired tokens automaticaly
 - [ ] explain better the token strategy inside the README file
