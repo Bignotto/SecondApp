@@ -71,6 +71,8 @@ Starting to use GitHub. It is about time for me to learn about branches and pull
 
 Starting a new branch for implementing platform persistence.
 
+Got some trouble dealing with dates. 
+
 Some ToDos:
 - [x] delete expired tokens automaticaly
 - [ ] explain better the token strategy inside the README file
