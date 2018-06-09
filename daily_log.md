@@ -71,7 +71,20 @@ Starting to use GitHub. It is about time for me to learn about branches and pull
 
 Starting a new branch for implementing platform persistence.
 
-Got some trouble dealing with dates. 
+Got some trouble dealing with dates.
+
+### 2018/06/06
+
+Now dates are working. Decided to store a string with a formated date anda a date object. Im sure this wont be a problem in the future.
+
+Watched other classes of the NodeJS course on Udemy. Saved for later reference.
+
+Now the platform post method works with the tokens. User must have a valid token to add a platform. Now I have to decide if others users can store the same platform again. Maybe I'll change the way the data is saved more like a file tree. There will be a user folder and inside this folder a platform folder and, inside platform folder, the games files. For this I will have to refactor how path is being handled.
+
+### 2018/06/08
+
+
+
 
 Some ToDos:
 - [x] delete expired tokens automaticaly
